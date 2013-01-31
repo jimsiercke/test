@@ -11,8 +11,15 @@ public class Main {
 			PullFtp.getFiles();
 			PushFtp.pushFiles();
 		}catch(Exception e) {
+			
+			// adding a comment here
+			
 			e.printStackTrace();
 		}
+	}
+	
+	public static void initCall() {
+		// do stuff
 	}
 
 }
