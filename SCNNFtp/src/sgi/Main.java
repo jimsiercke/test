@@ -11,6 +11,9 @@ public class Main {
 			
 			
 			PullFtp.getFiles();
+			
+			
+			
 			PushFtp.pushFiles();
 		}catch(Exception e) {		
 			e.printStackTrace();
