@@ -1,0 +1,27 @@
+<project name="SCNNFtp" default="deploy" basedir=".">
+	<description>
+       GeneralFTPProcessing
+    </description>
+	  <target name="init">	
+		<property name="src" location="."/>
+		<property name="root" location="classes" />  
+		<property name="manifest" location="manifest" />
+		<property name="jarFile" value="SCNNFtp.jar" />
+		<property name="jarDir" value="jarDir" />
+	  </target>
+	
+	  <target name="compile" depends="init"
+		description="compile the source " >
+		<!-- Compile the java code from ${src} -->
+		<javac srcdir="${src}" destdir="${root}"/>
+	  </target>
+	 
+	<target name="deploy" depends="compile"/>	
+
+	<target name="deploy-iceman" depends="compile">	
+	  	<jar destfile="${jarDir}/${jarFile}" manifest="${manifest}\Manifest.mf">
+			<fileset dir="${root}"/>
+		</jar>
+		<scp file="${jarDir}/${jarFile}" todir="jims@216.27.82.134:/data/opt/java/jarFiles" password="$h1pp1ng!" trust="true"/>
+	</target>
+</project>

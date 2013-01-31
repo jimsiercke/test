@@ -1,0 +1,2 @@
+Main-Class: sgi.Main
+Class-Path: servlet-api.jar activation.jar edtftpj.jar mail.jar
