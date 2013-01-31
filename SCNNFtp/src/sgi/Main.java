@@ -1,7 +1,6 @@
 package sgi;
 
 public class Main {
-//jims
 	/**
 	 * @param args
 	 */
@@ -17,9 +16,4 @@ public class Main {
 			e.printStackTrace();
 		}
 	}
-	
-	public static void initCall() {
-		// do stuff
-	}
-
 }
