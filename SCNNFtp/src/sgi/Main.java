@@ -15,6 +15,10 @@ public class Main {
 			
 			
 			PushFtp.pushFiles();
+			
+			
+			
+			
 		}catch(Exception e) {		
 			e.printStackTrace();
 		}
