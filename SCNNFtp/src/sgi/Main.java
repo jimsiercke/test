@@ -16,4 +16,10 @@ public class Main {
 			e.printStackTrace();
 		}
 	}
+	
+	public static void initCall() {
+		// do stuff
+		// more stuff
+	}
+
 }
