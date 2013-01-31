@@ -9,17 +9,8 @@ public class Main {
 		try {
 			PullFtp.getFiles();
 			PushFtp.pushFiles();
-		}catch(Exception e) {
-			
-			// adding a comment here
-			
+		}catch(Exception e) {		
 			e.printStackTrace();
 		}
 	}
-	
-	public static void initCall() {
-		// do stuff
-		// more stuff
-	}
-
 }
