@@ -13,12 +13,7 @@ public class PullFtp {
 		try {
 		    
 		    BasicLogger.logger("Setting Host");
-		    ftp.setRemoteHost("161.222.190.71");
-		    BasicLogger.logger("Setting User");
-		    ftp.setUserName("STRYGP");
-		    BasicLogger.logger("Setting Pass");
-		    ftp.setPassword("ST45GP9");
-		    ftp.connect();
+		   		    ftp.connect();
 		    File verified = null;
 		    if(ftp.isConnected())   {
 		    	BasicLogger.logger("Pull Connection Made");
